@@ -14,3 +14,12 @@ sudo pactl load-module module-echo-cancel
 '''
 
 Then in the voice application you should now have 2 additional audio devices. Input device being "Echo-Cancel Source", and output device being "Echo-Cancel Sink"
+
+
+
+## Enable Flatpak in the Discover app
+I prefer flatpaks, the Discover app will list them if you install the Flatpak dicover backend.
+
+'''
+sudo apt install plasma-discover-backend-flatpak
+'''
