@@ -1,9 +1,13 @@
 # kde_tips
 
+Currently on KDE Kubuntu 24.04 Plasma 5.27
+
 
 ## Mic Echo Cancellation
 
 To enable echo cancellation, so you can use laptop speakers with voice applications, and watch youtube videos at the same time. I've found that the PulseAudio echo module works well.
+https://userbase.kde.org/Simon/Tips,_Tricks_and_Best_Practices
+
 
 ```
 sudo apt install pulseaudio-utils
