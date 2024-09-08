@@ -3,7 +3,7 @@
 
 ## Mic Echo Cancellation
 
-To enable echo cancellation, so you can use laptop speakers with voice applications, and wacth youtube videos at the same time. I've found that the PulseAudio echo module works well.
+To enable echo cancellation, so you can use laptop speakers with voice applications, and watch youtube videos at the same time. I've found that the PulseAudio echo module works well.
 
 ```
 sudo apt install pulseaudio-utils
