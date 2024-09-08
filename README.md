@@ -1,6 +1,6 @@
 # kde_tips
 
-Currently on KDE Kubuntu 24.04 Plasma 5.27
+Currently on Kubuntu 24.04, KDE Plasma 5.27
 
 
 ## Mic Echo Cancellation
