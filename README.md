@@ -7,9 +7,11 @@ To enable echo cancellation, so you can use laptop speakers with voice applicati
 
 ```
 sudo apt install pulseaudio-utils
-
+```
+```
 sudo apt install pavucontrol-qt
-
+```
+```
 sudo pactl load-module module-echo-cancel
 ```
 
