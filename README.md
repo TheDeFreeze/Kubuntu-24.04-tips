@@ -20,7 +20,7 @@ Then in the voice application you should now have 2 additional audio devices. In
 
 
 ## Enable Flatpak in the Discover app
-I prefer flatpaks, the Discover app will list them if you install the Flatpak dicover backend.
+I prefer flatpaks, the Discover app will list them if you install the Flatpak dicover backend,and in some cases let you select source between Ubuntu, snap and flatpak.
 
 ```
 sudo apt install plasma-discover-backend-flatpak
