@@ -20,7 +20,7 @@ sudo apt install pavucontrol-qt
 
 Start module.
 ```
-sudo pactl load-module module-echo-cancel
+pactl load-module module-echo-cancel
 ```
 
 Make module load on boot by appending load module to the .profile file. (This is not perfect, google results make you add stuff to /etc/pulse/default.pa, but this simply does not work, and there's an open 3 year old bug tracker on it. This is just the easiest way I've found that I've tested, that works.)
