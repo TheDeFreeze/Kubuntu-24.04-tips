@@ -1,4 +1,4 @@
-# kde_tips
+## Kubuntu-24.04-tips
 
 Currently on Kubuntu 24.04, KDE Plasma 5.27
 
