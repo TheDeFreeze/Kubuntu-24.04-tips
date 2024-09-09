@@ -23,7 +23,7 @@ Start module.
 sudo pactl load-module module-echo-cancel
 ```
 
-Make mdule load on boot by appending load module to the .profile file. (This is not perfect, google results make you add stuff to /etc/pules/default.pa, but this simply does not work, and there's an open 3 year old bug tracker on it. This is just the easiest way I've found that I've tested that works.)
+Make module load on boot by appending load module to the .profile file. (This is not perfect, google results make you add stuff to /etc/pules/default.pa, but this simply does not work, and there's an open 3 year old bug tracker on it. This is just the easiest way I've found that I've tested that works.)
 ```
 echo "sudo pactl load-module module-echo-cancel" >> ./home/$USER/.profile
 
