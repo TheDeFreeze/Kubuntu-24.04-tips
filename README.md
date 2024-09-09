@@ -33,6 +33,9 @@ echo "pactl load-module module-echo-cancel" >> ./home/$USER/.profile
 Then in the voice application you should now have 2 additional audio devices. Input device being "Echo-Cancel Source", and output device being "Echo-Cancel Sink"
 
 
+Some thought: This works by default in Windows, it maybe kind of works before ding this? Sometimes? I dunno, massive improvement if this is done. Dissappointed this isn't better integrated, since laptops are common for throing Linux on.
+
+
 
 ## Enable Flatpak in the Discover app
 I prefer flatpaks, the Discover app will list them if you install the Flatpak dicover backend,and in some cases let you select source between Ubuntu, snap and flatpak.
