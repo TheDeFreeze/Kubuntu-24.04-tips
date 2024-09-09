@@ -33,7 +33,7 @@ echo "pactl load-module module-echo-cancel" >> ./home/$USER/.profile
 Then in the voice application you should now have 2 additional audio devices. Input device being "Echo-Cancel Source", and output device being "Echo-Cancel Sink"
 
 
-Some thought: This works by default in Windows, it maybe kind of works before ding this? Sometimes? I dunno, massive improvement if this is done. Dissappointed this isn't better integrated, since laptops are common for throing Linux on.
+Some thought: This works by default in Windows. In Kubuntu, it maybe kind of works before doing this? Sometimes? Or maybe it was just the Discord Krisp doings it's best. I dunno, but if you do this it's fantastic. Dissappointed this isn't better integrated, since laptops are common for throwing Linux on.
 
 
 
