@@ -46,12 +46,12 @@ sudo apt install plasma-discover-backend-flatpak
 
 
 ## Tap to click touchpad option grayed out
-I don't know why this is not on by default, but to have it on, add this line to /usr/share/X11/xorg.conf.d/40-libinput.conf
+I don't know why this is not on by default, but to have it on, add this line to /usr/share/X11/xorg.conf.d/40-libinput.conf. Make sure it's the "MatchIsTouchpad" section.
 
 ```
 Section "InputClass"
         Identifier "libinput touchpad catchall"
-        MatchIsTouchpad "on"
+        MatchIsTouchpad "on" # THIS IS THE SECTION YOU WANT
         MatchDevicePath "/dev/input/event*"
         Option "Tapping" "True" # ADD THIS LINE
         Driver "libinput"
