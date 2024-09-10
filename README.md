@@ -43,3 +43,17 @@ I prefer flatpaks, the Discover app will list them if you install the Flatpak di
 ```
 sudo apt install plasma-discover-backend-flatpak
 ```
+
+
+## Tap to click touchpad option grayed out
+I don't know why this is not on by default, but to have it on, add this line to /usr/share/X11/xorg.conf.d/40-libinput.conf
+
+```
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Option "Tapping" "True" # ADD THIS LINE
+        Driver "libinput"
+EndSection
+```
