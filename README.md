@@ -44,14 +44,6 @@ I prefer flatpaks, the Discover app will list them if you install the Flatpak di
 sudo apt install plasma-discover-backend-flatpak
 ```
 
-## Enable Wayland, this also enables tap-to-click and touchpad pinch zoom in applications.
-To enable Wayland on Kubuntu 24.04, you need to install an apt pakage. It's not installed becasue it's not fully supported apparently.
-Install the apt package listen below, reboot and in the lower left corner of the login screen you can select Wayland.
-
-```
-sudo apt install plasma-workspace-wayland
-```
-
 
 ## Tap to click touchpad option grayed out in X11 mode.
 I don't know why this is not on by default, but to have it on, add this line to /usr/share/X11/xorg.conf.d/40-libinput.conf. Make sure it's the "MatchIsTouchpad" section.
@@ -64,4 +56,22 @@ Section "InputClass"
         Option "Tapping" "True" # ADD THIS LINE
         Driver "libinput"
 EndSection
+```
+
+# Wayland Section
+
+
+## Enable Wayland, this also enables tap-to-click and touchpad pinch zoom in applications.
+To enable Wayland on Kubuntu 24.04, you need to install an apt pakage. It's not installed becasue it's not fully supported apparently.
+Install the apt package listen below, reboot and in the lower left corner of the login screen you can select Wayland.
+
+```
+sudo apt install plasma-workspace-wayland
+```
+
+
+## Apparently KRDC RDP application breaks if you enable Wayland as it misse the Wayland freeRDP package. To fix this just install it.
+
+```
+sudo apt install freerdp2-wayland
 ```
