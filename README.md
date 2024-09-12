@@ -58,7 +58,7 @@ Section "InputClass"
 EndSection
 ```
 
-# Wayland Section
+# Wayland Section (Experimental, expect bugs and additional fixes if enabled)
 
 
 ## Enable Wayland, this also enables tap-to-click and touchpad pinch zoom in applications.
