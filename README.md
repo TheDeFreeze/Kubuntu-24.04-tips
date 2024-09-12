@@ -70,7 +70,8 @@ sudo apt install plasma-workspace-wayland
 ```
 
 
-## Apparently KRDC RDP application breaks if you enable Wayland as it misse the Wayland freeRDP package. To fix this just install it.
+## KRDC RDP application 
+Apparently KRDC breaks if you enable Wayland as it misse the Wayland freeRDP package. To fix this just install it.
 
 ```
 sudo apt install freerdp2-wayland
