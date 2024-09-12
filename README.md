@@ -60,6 +60,14 @@ EndSection
 
 # Wayland Section (Experimental, expect bugs and additional fixes if enabled)
 
+Kubuntu 24.04 boots in X11 mode by default. This can be changed easily, and can be changed to and from easily as well.
+
+To check what you are runnning, use the command below:
+```
+echo $XDG_SESSION_TYPE
+```
+
+
 
 ## Enable Wayland, this also enables tap-to-click and touchpad pinch zoom in applications.
 To enable Wayland on Kubuntu 24.04, you need to install an apt pakage. It's not installed becasue it's not fully supported apparently.
