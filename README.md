@@ -35,6 +35,13 @@ Then in the voice application you should now have 2 additional audio devices. In
 
 Some thought: This works by default in Windows. In Kubuntu, it maybe kind of works before doing this? Sometimes? Or maybe it was just the Discord Krisp doings it's best. I dunno, but if you do this it's fantastic. Dissappointed this isn't better integrated, since laptops are common for throwing Linux on.
 
+## Crackling audio in video players.
+
+If you experience crackling audio on video playback, some google seraches suggest this is because of missing codecs. Installing the Ubuntu Restricted Extras solves this. Its a huge list of packages with fonts and shit with EULAs you have to accept, but it did solve the issue for me.
+
+```
+sudo apt install kubuntu-restricted-extras
+```
 
 
 ## Enable Flatpak in the Discover app
@@ -43,6 +50,8 @@ I prefer flatpaks, the Discover app will list them if you install the Flatpak di
 ```
 sudo apt install plasma-discover-backend-flatpak
 ```
+
+Then go into the Discover settings and click "Add Flathub" in sources.
 
 
 ## Tap to click touchpad option grayed out in X11 mode.
