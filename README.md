@@ -37,8 +37,14 @@ Some thought: This works by default in Windows. In Kubuntu, it maybe kind of wor
 
 ## Crackling audio in video players.
 
-If you experience crackling audio on video playback, some google seraches suggest this is because of missing codecs. Installing the Ubuntu Restricted Extras solves this. Its a huge list of packages with fonts and shit with EULAs you have to accept, but it did solve the issue for me.
+If you experience crackling audio on video playback, some google seraches suggest this is because of missing codecs that aren't open source. Installing the Ubuntu Restricted Extras solves this. Its a huge list of packages with fonts and shit with EULAs you have to accept, but it did solve the issue for me.
 
+Make sure you have the non-open source repository enabled:
+```
+sudo add-apt-repository multiverse
+```
+
+And install the package:
 ```
 sudo apt install kubuntu-restricted-extras
 ```
