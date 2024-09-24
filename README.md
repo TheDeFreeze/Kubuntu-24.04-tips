@@ -25,7 +25,7 @@ pactl load-module module-echo-cancel
 
 Make module load on boot by appending load module to the .profile file. (This is not perfect, google results make you add stuff to /etc/pulse/default.pa, but this simply does not work, and there's an open 3 year old bug tracker on it. This is just the easiest way I've found that I've tested, that works.) (Note: do not use sudo)
 ```
-echo "pactl load-module module-echo-cancel" >> ./home/$USER/.profile
+echo "pactl load-module module-echo-cancel" >> /home/$USER/.profile
 ```
 
 
