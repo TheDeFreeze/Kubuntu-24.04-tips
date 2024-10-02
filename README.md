@@ -73,6 +73,45 @@ Section "InputClass"
 EndSection
 ```
 
+# Microsoft Fonts for LIbreOffice
+Microsoft, being shit, resticts the redistribution of the default fonts used in Word and Poweerpoint. There is a way of legally getting these though, through the PowerPointViewer program they have publish. Run the commands below and restart any office applications using them.
+See full guide here: https://wiki.debian.org/ppviewerFonts
+
+```
+wget https://archive.org/download/PowerPointViewer_201801/PowerPointViewer.exe
+```
+
+```
+sudo apt install cabextract
+```
+
+```
+cabextract PowerPointViewer.exe -F ppviewer.cab
+```
+
+```
+mkdir -p ~/.fonts/ppviewer/
+```
+
+```
+cabextract ppviewer.cab -F '*.TTC' -d ~/.fonts/ppviewer/
+```
+
+```
+cabextract ppviewer.cab -F '*.TTF' -d ~/.fonts/ppviewer/
+```
+```
+mkdir -p ~/.local/share/fonts/ppviewer/
+```
+
+```
+cabextract ppviewer.cab -F '*.TTC' -d ~/.local/share/fonts/ppviewer/
+```
+
+```
+cabextract ppviewer.cab -F '*.TTF' -d ~/.local/share/fonts/ppviewer/
+```
+
 # Wayland Section (Experimental, expect bugs and additional fixes if enabled)
 
 Kubuntu 24.04 boots in X11 mode by default. This can be changed easily, and can be changed to and from easily as well.
