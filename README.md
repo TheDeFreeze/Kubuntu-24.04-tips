@@ -73,7 +73,7 @@ Section "InputClass"
 EndSection
 ```
 
-# Microsoft Fonts for LIbreOffice
+# Microsoft Fonts for LibreOffice
 Microsoft, being shit, resticts the redistribution of the default fonts used in Word and Poweerpoint. There is a way of legally getting these though, through the PowerPointViewer program they have publish. Run the commands below and restart any office applications using them.
 See full guide here: https://wiki.debian.org/ppviewerFonts
 
